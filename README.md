@@ -26,6 +26,20 @@ it, simply add the following line to your Podfile:
 pod "SugarAnchor"
 ```
 
+## Operator Terminology
+
+Think `~` as **Inactive constraint** and `*` as **Active constraint**. Then with `=*=`, you'll create an active constraint directly or with `=~=` you may create an inactive constraint which you can activate later.
+
+```swift
+view1.leftAnchor =*= view2.leftAnchor + 10
+
+// Or
+
+let leftConstraint = (view1.leftAnchor =~= view2.leftAnchor + 10)
+leftConstraint.isActive = true
+```
+In each case, you'll get the constraint to keep or just ignore.
+
 ## Author
 
 ashikahmad, ashikcu@gmail.com
