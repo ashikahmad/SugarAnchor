@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SugarAnchor_Example' do
+  pod 'SugarAnchor', :path => '../'
+
+  target 'SugarAnchor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
