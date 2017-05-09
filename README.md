@@ -12,9 +12,10 @@ SugarAnchor is syntactic sugar on NSLayoutAnchor to help us write more compact, 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-[x] Xcode 8.3 or above
-[x] Swift 3.1
-[x] iOS 9.0 or above
+
+- [x] Xcode 8.3 or above
+- [x] Swift 3.1
+- [x] iOS 9.0 or above
 
 ## Installation
 
