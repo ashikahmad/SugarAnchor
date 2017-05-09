@@ -1,0 +1,6 @@
+framework module SugarAnchor {
+  umbrella header "SugarAnchor-umbrella.h"
+
+  export *
+  module * { export * }
+}

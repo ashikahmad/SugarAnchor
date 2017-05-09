@@ -1,0 +1,16 @@
+PODS:
+  - SugarAnchor (0.1.0)
+
+DEPENDENCIES:
+  - SugarAnchor (from `../`)
+
+EXTERNAL SOURCES:
+  SugarAnchor:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SugarAnchor: 04757e57691dd8d1dbb9f4c2585a19f6e5d68437
+
+PODFILE CHECKSUM: 3ce7651fad434b0de3edccf69397c22e70c5d64d
+
+COCOAPODS: 1.2.1

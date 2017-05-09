@@ -5,11 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/SugarAnchor.svg?style=flat)](http://cocoapods.org/pods/SugarAnchor)
 [![Platform](https://img.shields.io/cocoapods/p/SugarAnchor.svg?style=flat)](http://cocoapods.org/pods/SugarAnchor)
 
+SugarAnchor is syntactic sugar on NSLayoutAnchor to help us write more compact, readable and easy layout code. It wraps up all of NSLayoutXAxisAnchor, NSLayoutYAxisAnchor and NSLayoutDimension functionalities under some easy to use operators to reduce verbosity.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+[x] Xcode 8.3 or above
+[x] Swift 3.1
+[x] iOS 9.0 or above
 
 ## Installation
 

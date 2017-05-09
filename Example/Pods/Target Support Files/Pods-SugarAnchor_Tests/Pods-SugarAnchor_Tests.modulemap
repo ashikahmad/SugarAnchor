@@ -1,0 +1,6 @@
+framework module Pods_SugarAnchor_Tests {
+  umbrella header "Pods-SugarAnchor_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
