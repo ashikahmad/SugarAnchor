@@ -26,7 +26,7 @@ it, simply add the following line to your Podfile:
 pod "SugarAnchor"
 ```
 
-## Operator Terminology
+## Operator Summary
 
 Think `~` as **Inactive constraint** and `*` as **Active constraint**. Then with `=*=`, you'll create an active constraint directly or with `=~=` you may create an inactive constraint which you can activate later.
 
@@ -38,7 +38,25 @@ view1.leftAnchor =*= view2.leftAnchor + 10
 let leftConstraint = (view1.leftAnchor =~= view2.leftAnchor + 10)
 leftConstraint.isActive = true
 ```
-In each case, you'll get the constraint to keep or just ignore.
+In each case, you'll get the constraint to keep or just ignore. For example, for an active one:
+```swift
+self.heightConstraint = (v1.heightAnchor =*= 200)
+// Later somewhere
+self.heightConstraint.constant = 100
+```
+## Operator list
+
+
+Operator | Description | Example
+--- | --- | ---
+`=*=` | Equal<br>(Active) | ❖ `v1.leadingAnchor =*= v2.leadingAnchor`<br>❖ `v1.leftAnchor =*= v2.leftAnchor + 20`<br>❖ `v1.widthAnchor =*= v2.widthAnchor / 2 + 10`<br>❖ `v1.heightAnchor =*= 200`
+`<*=` | LessThanOrEqual<br>(Active) | ❖ `v1.bottomAnchor <*= container.bottomAnchor - 8`
+`>*=` | GreaterThanOrEqual<br>(Active) | ❖ `v2.leadingAnchor >*= v1.trailingAnchor + 5`
+`=~=` | Equal<br>(Inactive) | ❖ `(v1.widthAnchor =~= 200).isActive = true`
+`<~=` | LessThanOrEqual<br>(Inactive) | ❖ `(v1.bottomAnchor <~= container.bottomAnchor - 8).isActive = true`
+`>~=` | GreaterThanOrEqual<br>(Inactive) | ❖ `(v2.leadingAnchor >~= v1.trailingAnchor + 5).isActive = true`
+
+
 
 ## Author
 
