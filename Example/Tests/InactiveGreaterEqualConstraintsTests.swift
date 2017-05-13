@@ -1,8 +1,16 @@
+//
+//  InactiveGreaterEqualConstraintsTests.swift
+//  SugarAnchor
+//
+//  Created by Ashik uddin Ahmad on 5/14/17.
+//  Copyright © 2017 CocoaPods. All rights reserved.
+//
+
 import UIKit
 import XCTest
 import SugarAnchor
 
-class ActiveConstraintsTests: XCTestCase {
+class InactiveGreaterEqualConstraintsTests: XCTestCase {
     var containerView: UIView!
     var view1: UIView!
     var view2: UIView!
@@ -27,63 +35,67 @@ class ActiveConstraintsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testActiveEqualBasic() {
-        let constraint = view1.leadingAnchor =*= view2.leadingAnchor
+    func testBasic() {
+        let constraint = view1.leadingAnchor >~= view2.leadingAnchor
         XCTAssert(constraint.firstItem === view1)
         XCTAssert(constraint.secondItem === view2)
         XCTAssert(constraint.firstAttribute == .leading)
         XCTAssert(constraint.secondAttribute == .leading)
-        XCTAssert(constraint.relation == .equal)
-        XCTAssert(constraint.isActive == true)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
+        XCTAssert(constraint.isActive == false)
     }
     
-    func testActiveEqualWithConstant() {
-        let constraint = view1.leadingAnchor =*= view2.leadingAnchor + 20
+    func testWithConstant() {
+        let constraint = view1.leadingAnchor >~= view2.leadingAnchor + 20
         XCTAssert(constraint.firstItem === view1)
         XCTAssert(constraint.secondItem === view2)
         XCTAssert(constraint.firstAttribute == .leading)
         XCTAssert(constraint.secondAttribute == .leading)
-        XCTAssert(constraint.relation == .equal)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
         XCTAssert(constraint.constant == 20)
-        XCTAssert(constraint.isActive == true)
+        XCTAssert(constraint.isActive == false)
     }
     
-    func testActiveEqualWithNegativeConstant() {
-        let constraint = view1.leadingAnchor =*= view2.leadingAnchor - 20
+    func testWithNegativeConstant() {
+        let constraint = view1.leadingAnchor >~= view2.leadingAnchor - 20
         XCTAssert(constraint.firstItem === view1)
         XCTAssert(constraint.secondItem === view2)
         XCTAssert(constraint.firstAttribute == .leading)
         XCTAssert(constraint.secondAttribute == .leading)
-        XCTAssert(constraint.relation == .equal)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
         XCTAssert(constraint.constant == -20)
-        XCTAssert(constraint.isActive == true)
+        XCTAssert(constraint.isActive == false)
     }
     
-    func testActiveEqualConstantOnly() {
-        let constraint = view1.widthAnchor =*= 200
+    func testConstantOnly() {
+        let constraint = view1.widthAnchor >~= 200
         XCTAssert(constraint.firstItem === view1)
         XCTAssert(constraint.firstAttribute == .width)
-        XCTAssert(constraint.relation == .equal)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
         XCTAssert(constraint.constant == 200)
-        XCTAssert(constraint.isActive == true)
+        XCTAssert(constraint.isActive == false)
     }
     
-    func testActiveEqualWithMultiplier() {
-        let constraint = view1.widthAnchor =*= view2.widthAnchor * 2
+    func testWithMultiplier() {
+        let constraint = view1.widthAnchor >~= view2.widthAnchor * 2
         XCTAssert(constraint.firstItem === view1)
         XCTAssert(constraint.secondItem === view2)
         XCTAssert(constraint.firstAttribute == .width)
         XCTAssert(constraint.secondAttribute == .width)
-        XCTAssert(constraint.relation == .equal)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
         XCTAssert(constraint.multiplier == 2)
-        XCTAssert(constraint.isActive == true)
+        XCTAssert(constraint.isActive == false)
     }
     
-//    func testPerformanceExample() {
-//        // This is an example of a performance test case.
-//        self.measure() {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
-    
+    func testWithMultiplierAndConstant() {
+        let constraint = view1.widthAnchor >~= view2.widthAnchor * 2 + 20
+        XCTAssert(constraint.firstItem === view1)
+        XCTAssert(constraint.secondItem === view2)
+        XCTAssert(constraint.firstAttribute == .width)
+        XCTAssert(constraint.secondAttribute == .width)
+        XCTAssert(constraint.relation == .greaterThanOrEqual)
+        XCTAssert(constraint.multiplier == 2)
+        XCTAssert(constraint.constant == 20)
+        XCTAssert(constraint.isActive == false)
+    }
 }
