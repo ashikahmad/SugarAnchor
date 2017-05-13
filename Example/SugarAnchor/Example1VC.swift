@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Example1VC.swift
 //  SugarAnchor
 //
 //  Created by ashikahmad on 05/09/2017.
@@ -9,7 +9,7 @@
 import UIKit
 import SugarAnchor
 
-class ViewController: UIViewController {
+class Example1VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
