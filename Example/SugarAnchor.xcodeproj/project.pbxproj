@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		13853FB9B3A8D031C8A6F401 /* Pods_SugarAnchor_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025949FF8DE39A11A50B850E /* Pods_SugarAnchor_Example.framework */; };
 		3BB7F9431EC6EB4300B1F362 /* Example2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7F9421EC6EB4300B1F362 /* Example2VC.swift */; };
+		3BB7F9461EC7901200B1F362 /* InactiveConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7F9441EC78FC100B1F362 /* InactiveConstraintsTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* Example1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* Example1VC.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ActiveConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ActiveConstraintsTests.swift */; };
 		6F90FC901CEEB585F823D6C3 /* Pods_SugarAnchor_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31BE13C109738432CD821A8 /* Pods_SugarAnchor_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		1BE0C5086FEB9E58F2827DFC /* Pods-SugarAnchor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarAnchor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SugarAnchor_Example/Pods-SugarAnchor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D0B30EE96C23B5B561E4B24 /* Pods-SugarAnchor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarAnchor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SugarAnchor_Example/Pods-SugarAnchor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3BB7F9421EC6EB4300B1F362 /* Example2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2VC.swift; sourceTree = "<group>"; };
+		3BB7F9441EC78FC100B1F362 /* InactiveConstraintsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InactiveConstraintsTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SugarAnchor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarAnchor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +45,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SugarAnchor_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarAnchor_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ActiveConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveConstraintsTests.swift; sourceTree = "<group>"; };
 		6959DBA3E4F269F8BEF0D9B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		73B5276153596600CCEE40D0 /* Pods-SugarAnchor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarAnchor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SugarAnchor_Tests/Pods-SugarAnchor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8FAAB6014EE88E13FC5BEAC2 /* SugarAnchor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SugarAnchor.podspec; path = ../SugarAnchor.podspec; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ActiveConstraintsTests.swift */,
+				3BB7F9441EC78FC100B1F362 /* InactiveConstraintsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -374,7 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ActiveConstraintsTests.swift in Sources */,
+				3BB7F9461EC7901200B1F362 /* InactiveConstraintsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarAnchor_Example.app/SugarAnchor_Example";
 			};
 			name = Debug;
 		};
@@ -558,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarAnchor_Example.app/SugarAnchor_Example";
 			};
 			name = Release;
 		};
