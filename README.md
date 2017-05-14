@@ -5,7 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/SugarAnchor.svg?style=flat)](http://cocoapods.org/pods/SugarAnchor)
 [![Platform](https://img.shields.io/cocoapods/p/SugarAnchor.svg?style=flat)](http://cocoapods.org/pods/SugarAnchor)
 
-SugarAnchor is syntactic sugar on NSLayoutAnchor to help us write more compact, readable and easy layout code. It wraps up all of NSLayoutXAxisAnchor, NSLayoutYAxisAnchor and NSLayoutDimension functionalities under some easy to use operators to reduce verbosity.
+SugarAnchor is syntactic sugar on `NSLayoutAnchor` to help us write more compact, readable and easy layout code. It wraps up all of `NSLayoutXAxisAnchor`, `NSLayoutYAxisAnchor` and `NSLayoutDimension` functionalities under some easy to use operators to reduce verbosity.
+
+## Features
+
+- Simple, concise, native<sup>[1]</sup>. Almost zero learning curve
+- Unit tested
+- Small codebase (less than 300 LOC)
+
+> [1] Same NSLayoutAnchor/NSLayoutConstraints, just syntactic sugar on it
 
 ## Example
 
@@ -28,7 +36,17 @@ pod "SugarAnchor"
 
 ## Operator Summary
 
-Think `~` as **Inactive constraint** and `*` as **Active constraint**. Then with `=*=`, you'll create an active constraint directly or with `=~=` you may create an inactive constraint which you can activate later.
+Let's looks at a simple NSLayoutAnchor code:
+```swift
+(redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)).isActive = true
+```
+
+With SugarAnchor, it become:
+```swift
+redView.leadingAnchor =*= view.leadingAnchor + 20
+```
+
+Think `*` as **Active constraint** and `~` as **Inactive constraint**. Then with `=*=`, you'll create an active constraint directly or with `=~=` you may create an inactive constraint which you can activate later.
 
 ```swift
 view1.leftAnchor =*= view2.leftAnchor + 10
