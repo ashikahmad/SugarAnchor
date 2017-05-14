@@ -10,6 +10,7 @@ SugarAnchor is syntactic sugar on `NSLayoutAnchor` to help us write more compact
 ## Features
 
 - Simple, concise, native<sup>[1]</sup>. Almost zero learning curve
+- Typesafe, similar to NSLayoutAnchor
 - Unit tested
 - Small codebase (less than 300 LOC)
 
