@@ -1,4 +1,4 @@
-# SugarAnchor
+# ![Banner](SugarAnchor-Banner.png)
 
 [![CI Status](http://img.shields.io/travis/ashikahmad/SugarAnchor.svg?style=flat)](https://travis-ci.org/ashikahmad/SugarAnchor)
 [![Version](https://img.shields.io/cocoapods/v/SugarAnchor.svg?style=flat)](http://cocoapods.org/pods/SugarAnchor)
