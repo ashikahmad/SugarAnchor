@@ -68,12 +68,12 @@ self.heightConstraint.constant = 100
 
 Operator | Description | Example
 --- | --- | ---
-`=*=` | Equal<br>(Active) | ❖ `v1.leadingAnchor =*= v2.leadingAnchor`<br>❖ `v1.leftAnchor =*= v2.leftAnchor + 20`<br>❖ `v1.widthAnchor =*= v2.widthAnchor / 2 + 10`<br>❖ `v1.heightAnchor =*= 200`
-`<*=` | LessThanOrEqual<br>(Active) | ❖ `v1.bottomAnchor <*= container.bottomAnchor - 8`
-`>*=` | GreaterThanOrEqual<br>(Active) | ❖ `v2.leadingAnchor >*= v1.trailingAnchor + 5`
-`=~=` | Equal<br>(Inactive) | ❖ `(v1.widthAnchor =~= 200).isActive = true`
-`<~=` | LessThanOrEqual<br>(Inactive) | ❖ `(v1.bottomAnchor <~= container.bottomAnchor - 8).isActive = true`
-`>~=` | GreaterThanOrEqual<br>(Inactive) | ❖ `(v2.leadingAnchor >~= v1.trailingAnchor + 5).isActive = true`
+<kbd> =*= </kbd> | Equal<br>(Active) | ❖ `v1.leadingAnchor =*= v2.leadingAnchor`<br>❖ `v1.leftAnchor =*= v2.leftAnchor + 20`<br>❖ `v1.widthAnchor =*= v2.widthAnchor / 2 + 10`<br>❖ `v1.heightAnchor =*= 200`
+<kbd> <*= </kbd> | LessThanOrEqual<br>(Active) | ❖ `v1.bottomAnchor <*= container.bottomAnchor - 8`
+<kbd> >*= </kbd> | GreaterThanOrEqual<br>(Active) | ❖ `v2.leadingAnchor >*= v1.trailingAnchor + 5`
+<kbd> =~= </kbd> | Equal<br>(Inactive) | ❖ `(v1.widthAnchor =~= 200).isActive = true`
+<kbd> <~= </kbd> | LessThanOrEqual<br>(Inactive) | ❖ `(v1.bottomAnchor <~= container.bottomAnchor - 8).isActive = true`
+<kbd> >~= </kbd> | GreaterThanOrEqual<br>(Inactive) | ❖ `(v2.leadingAnchor >~= v1.trailingAnchor + 5).isActive = true`
 
 
 
